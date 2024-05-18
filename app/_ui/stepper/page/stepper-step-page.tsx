@@ -31,13 +31,26 @@ const StepperStepPage = () => {
           total={4}
           className='mb-12'
         />
-        <Field
-          label='성'
-          placeholder='성을 입력해주세요'
-          inputName='firstName'
-          inputType='text'
-          onChange={() => {}}
-        />
+        <div className='flex flex-wrap gap-10'>
+          <Field
+            label='성'
+            placeholder='성을 입력해주세요'
+            inputName='firstName'
+            inputType='text'
+            onChange={() => {}}
+            isValid={true}
+            invalidText='유효한 입력이 아닙니다'
+          />
+          <Field
+            label='성'
+            placeholder='성을 입력해주세요'
+            inputName='firstName'
+            inputType='text'
+            onChange={() => {}}
+            isValid={false}
+            invalidText='유효한 입력이 아닙니다'
+          />
+        </div>
       </div>
       <div className='flex gap-4 px-4 w-full absolute left-0 bottom-8'>
         <Button variant='secondary' className='w-40'>
