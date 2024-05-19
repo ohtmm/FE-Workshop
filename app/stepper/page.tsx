@@ -1,4 +1,4 @@
-import StepperOnboardingPage from '../_ui/stepper/page/stepper-onboarding-page';
+import StepperOnboardingPage from '../_component/stepper/page/stepper-onboarding-page';
 
 const Page = () => {
   return <StepperOnboardingPage />;
