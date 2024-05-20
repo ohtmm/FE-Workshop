@@ -8,29 +8,32 @@ interface Props extends ClassNameProps {
   placeholder: string;
   inputName: string;
   inputType: HTMLInputTypeAttribute;
+  inputValue: any;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   validationRule: (value: any) => boolean;
   invalidText: string;
 }
 
 const Field = ({
+  className,
   label,
   placeholder,
   inputName,
   inputType,
+  inputValue,
   onChange,
-  invalidText,
   validationRule,
-  className,
+  invalidText,
 }: Props) => {
   const [isValid, setIsValid] = useState<boolean | 'pending'>('pending');
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    onChange(e);
     if (!validationRule(e.target.value)) {
       setIsValid(false);
       return;
     }
     setIsValid(true);
-    onChange(e);
   };
 
   return (
@@ -40,11 +43,12 @@ const Field = ({
       </label>
       <input
         className={`block p-2 w-full text-xl font-medium placeholder-grey200 text-black border-b ${
-          isValid === true ? 'border-grey200' : 'border-red'
+          isValid === false ? 'border-red' : 'border-grey200'
         }`}
         id={inputName}
         name={inputName}
         type={inputType}
+        value={inputValue}
         placeholder={placeholder}
         onChange={handleChange}
       />

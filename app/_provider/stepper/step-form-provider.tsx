@@ -9,11 +9,11 @@ import {
 } from 'react';
 
 export type StepForm = {
-  first_name: string;
-  last_name: string;
-  phone_number: number;
-  identification_number: number;
-  address: string;
+  first_name: string | undefined;
+  last_name: string | undefined;
+  phone_number: string | undefined;
+  identification_number: string | undefined;
+  address: string | undefined;
 };
 
 type StepFormCreate = {
@@ -22,9 +22,16 @@ type StepFormCreate = {
 };
 
 export const stepformContext = createContext<StepFormCreate | null>(null);
+const initialForm = {
+  first_name: '',
+  last_name: '',
+  phone_number: '',
+  identification_number: '',
+  address: '',
+};
 
 const StepFormProvider = ({ children }: PropsWithChildren) => {
-  const [fields, setFields] = useState<Partial<StepForm>>({});
+  const [fields, setFields] = useState<Partial<StepForm>>(initialForm);
 
   return (
     <stepformContext.Provider value={{ fields, setFields }}>

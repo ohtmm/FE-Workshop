@@ -16,4 +16,5 @@ export type Field = {
   inputName: keyof StepForm;
   inputType: HTMLInputTypeAttribute;
   validationRule: (value: any) => boolean;
+  invalidText: string;
 };
