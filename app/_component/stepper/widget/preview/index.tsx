@@ -3,7 +3,7 @@ import ProgressBar from '../progress-bar';
 import INITIAL_STEPPER from '../step/constant/intial_stepper';
 import useStepForm from '../step/lib/useStepForm';
 import FieldPreview from '../field-preview';
-import Button from '../../shared/button';
+import Button from '../../../shared/button';
 import { useRouter } from 'next/navigation';
 
 const FormPreivew = () => {
@@ -23,7 +23,7 @@ const FormPreivew = () => {
   });
 
   const handleSubmitButton = () => {
-    router.push('/stepper/submit');
+    router.push('/stepper/success');
   };
   return (
     <div className='pt-4 relative min-h-screen'>

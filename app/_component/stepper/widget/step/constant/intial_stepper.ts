@@ -1,6 +1,6 @@
-import validateEmpty from '../../../shared/lib/validation-empty';
-import validateIdentificationNumber from '../../../shared/lib/validation-identification-number';
-import validatePhoneNumber from '../../../shared/lib/validation-phone-number';
+import validateEmpty from '../../../../shared/lib/validation-empty';
+import validateIdentificationNumber from '../../../../shared/lib/validation-identification-number';
+import validatePhoneNumber from '../../../../shared/lib/validation-phone-number';
 import { Step } from '../type';
 
 const INITIAL_STEPPER: Step[] = [

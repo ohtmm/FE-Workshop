@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import Button from '../shared/button';
+import Button from '../../shared/button';
 
 const StepperSuccessPage = () => {
   const router = useRouter();

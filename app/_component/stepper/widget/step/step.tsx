@@ -5,11 +5,11 @@ import ProgressBar from '../progress-bar';
 import Description from '../description';
 import Field from '../field';
 import useStepForm from './lib/useStepForm';
-import Button from '../../shared/button';
+import Button from '../../../shared/button';
 import useCurrentStep from './lib/useCurrentStep';
 import isNextButtonDisabled from './lib/isNextButtonDisabled';
 import PrevButton from '../prev-button';
-import useToggle from '../../shared/lib/useToggle';
+import useToggle from '../../../shared/lib/useToggle';
 
 const Step = () => {
   const { setIsActive: setIsDone } = useToggle();
