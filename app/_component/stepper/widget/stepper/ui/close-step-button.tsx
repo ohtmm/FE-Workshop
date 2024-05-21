@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import CloseButton from '../../shared/close-button';
+import CloseButton from '../../../../shared/close-button';
 
 const CloseStepButton = () => {
   const router = useRouter();

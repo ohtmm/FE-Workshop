@@ -6,7 +6,7 @@ const isNextButtonDisabled = (
   formDataFields: Partial<StepForm>
 ) => {
   return !inputFields.every((field) =>
-    field.validationRule(formDataFields[field.inputName])
+    field.validationRule(formDataFields[field.name])
   );
 };
 

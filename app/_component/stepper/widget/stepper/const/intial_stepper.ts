@@ -12,17 +12,17 @@ const INITIAL_STEPPER: Step[] = [
     fields: [
       {
         label: '성',
-        inputPlaceholder: '성을 입력하세요',
-        inputName: 'first_name',
-        inputType: 'text',
+        placeholder: '성을 입력하세요',
+        name: 'first_name',
+        type: 'text',
         validationRule: validateEmpty,
         invalidText: '성을 입력하지 않았습니다',
       },
       {
         label: '이름',
-        inputPlaceholder: '이름을 입력하세요',
-        inputName: 'last_name',
-        inputType: 'text',
+        placeholder: '이름을 입력하세요',
+        name: 'last_name',
+        type: 'text',
         validationRule: validateEmpty,
         invalidText: '이름을 입력하지 않았습니다',
       },
@@ -36,9 +36,9 @@ const INITIAL_STEPPER: Step[] = [
     fields: [
       {
         label: '전화번호',
-        inputPlaceholder: '전화번호를 입력하세요',
-        inputName: 'phone_number',
-        inputType: 'text',
+        placeholder: '전화번호를 입력하세요',
+        name: 'phone_number',
+        type: 'text',
         validationRule: validatePhoneNumber,
         invalidText: '01012345678 과 같이 입력해주세요',
       },
@@ -52,9 +52,9 @@ const INITIAL_STEPPER: Step[] = [
     fields: [
       {
         label: '주민등록번호',
-        inputPlaceholder: '주민등록번호를 입력하세요',
-        inputName: 'identification_number',
-        inputType: 'text',
+        placeholder: '주민등록번호를 입력하세요',
+        name: 'identification_number',
+        type: 'text',
         validationRule: validateIdentificationNumber,
         invalidText: '13자리의 주민등록번호를 입력해주세요',
       },
@@ -68,9 +68,9 @@ const INITIAL_STEPPER: Step[] = [
     fields: [
       {
         label: '주소',
-        inputPlaceholder: '주소를 입력하세요',
-        inputName: 'address',
-        inputType: 'text',
+        placeholder: '주소를 입력하세요',
+        name: 'address',
+        type: 'text',
         validationRule: validateEmpty,
         invalidText: '주소를 입력해주세요',
       },

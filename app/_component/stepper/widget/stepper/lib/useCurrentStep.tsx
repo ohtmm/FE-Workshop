@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Step } from '../type';
-import INITIAL_STEPPER from '../constant/intial_stepper';
+import INITIAL_STEPPER from '../const/intial_stepper';
 
 const useCurrentStep = () => {
   const [steps, setSteps] = useState(INITIAL_STEPPER);

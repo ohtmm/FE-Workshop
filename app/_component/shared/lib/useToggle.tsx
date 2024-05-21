@@ -1,4 +1,4 @@
-import { toggleContext } from '@/app/_provider/stepper/toggle-provider';
+import { toggleContext } from '@/app/_provider/toggle-provider';
 import { useContext } from 'react';
 
 const useToggle = () => {

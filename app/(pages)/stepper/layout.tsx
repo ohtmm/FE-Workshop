@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
-import StepFormProvider from '../_provider/stepper/step-form-provider';
-import ToggleProvider from '../_provider/stepper/toggle-provider';
+import StepFormProvider from '../../_provider/stepper/step-form-provider';
+import ToggleProvider from '../../_provider/toggle-provider';
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (

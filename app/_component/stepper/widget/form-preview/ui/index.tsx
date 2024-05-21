@@ -1,10 +1,10 @@
 import { StepForm } from '@/app/_provider/stepper/step-form-provider';
-import ProgressBar from '../progress-bar';
-import INITIAL_STEPPER from '../step/constant/intial_stepper';
-import useStepForm from '../step/lib/useStepForm';
-import FieldPreview from '../field-preview';
-import Button from '../../../shared/button';
+import ProgressBar from '../../step/ui/step-progress-bar';
+import INITIAL_STEPPER from '../../stepper/const/intial_stepper';
+import useStepForm from '../../stepper/lib/useStepForm';
+import Button from '../../../../shared/button';
 import { useRouter } from 'next/navigation';
+import FieldPreview from './field-preview';
 
 const FormPreivew = () => {
   const { fields: formFields } = useStepForm();
@@ -16,7 +16,7 @@ const FormPreivew = () => {
       fields: step.fields.map((field) => {
         return {
           label: field.label,
-          value: formFields[field.inputName as keyof Partial<StepForm>],
+          value: formFields[field.name as keyof Partial<StepForm>],
         };
       }),
     };

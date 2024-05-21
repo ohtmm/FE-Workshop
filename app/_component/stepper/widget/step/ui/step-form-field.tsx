@@ -1,14 +1,14 @@
 'use client';
 
 import { ChangeEvent, HTMLInputTypeAttribute, useState } from 'react';
-import { ClassNameProps } from '../../shared/type';
+import { ClassNameProps } from '../../../../shared/type';
 
 interface Props extends ClassNameProps {
   label: string;
   placeholder: string;
-  inputName: string;
-  inputType: HTMLInputTypeAttribute;
-  inputValue: any;
+  name: string;
+  type: HTMLInputTypeAttribute;
+  value: any;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   validationRule: (value: any) => boolean;
   invalidText: string;
@@ -18,9 +18,9 @@ const Field = ({
   className,
   label,
   placeholder,
-  inputName,
-  inputType,
-  inputValue,
+  name,
+  type,
+  value,
   onChange,
   validationRule,
   invalidText,
@@ -38,17 +38,17 @@ const Field = ({
 
   return (
     <div className={`${className} w-full flex flex-wrap `}>
-      <label htmlFor={inputName} className='text-sm text-black'>
+      <label htmlFor={name} className='text-sm text-black'>
         {label}
       </label>
       <input
         className={`block p-2 w-full text-xl font-medium placeholder-grey200 text-black border-b ${
           isValid === false ? 'border-red' : 'border-grey200'
         }`}
-        id={inputName}
-        name={inputName}
-        type={inputType}
-        value={inputValue}
+        id={name}
+        name={name}
+        type={type}
+        value={value}
         placeholder={placeholder}
         onChange={handleChange}
       />

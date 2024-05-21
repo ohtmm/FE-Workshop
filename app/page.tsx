@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <main className='w-full min-h-screen text-[36px] text-black bg-white items-center font-bold justify-between p-4'>
       <div className='w-full text-left leading-8'>
-        {/* <p className='text-base font-semibold'>youngyoung</p> */}
         <p className=''>FRONT-END WORKSHOP</p>
       </div>
       <div className='w-full mt-20 flex flex-wrap gap-4'>

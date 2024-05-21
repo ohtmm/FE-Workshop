@@ -1,8 +1,8 @@
 'use client';
 
-import Step from '../widget/step/step';
-import CloseStepButton from '../widget/close-step-button';
-import FormPreivew from '../widget/preview';
+import Stepper from '../widget/stepper/ui';
+import CloseStepButton from '../widget/stepper/ui/close-step-button';
+import FormPreivew from '../widget/form-preview/ui';
 import useToggle from '../../shared/lib/useToggle';
 
 const StepperStepPage = () => {
@@ -11,7 +11,7 @@ const StepperStepPage = () => {
   return (
     <div className='relative min-h-screen'>
       <CloseStepButton />
-      {!isDone && <Step />}
+      {!isDone && <Stepper />}
       {isDone && <FormPreivew />}
     </div>
   );
