@@ -35,8 +35,12 @@ const FormPreivew = () => {
           입력된 정보를 확인해 주세요
         </p>
         <div className='w-full flex flex-wrap gap-6'>
-          {previewField.map((fields) => (
-            <FieldPreview title={fields.title} fields={fields.fields} />
+          {previewField.map((fields, idx) => (
+            <FieldPreview
+              key={idx}
+              title={fields.title}
+              fields={fields.fields}
+            />
           ))}
         </div>
       </div>
