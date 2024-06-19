@@ -1,10 +1,10 @@
+import StepFormProvider from '@/app/_provider/stepper/step-form-provider';
+import ToggleProvider from '@/app/_provider/toggle-provider';
 import { PropsWithChildren } from 'react';
-import StepFormProvider from '../../_provider/stepper/step-form-provider';
-import ToggleProvider from '../../_provider/toggle-provider';
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className='bg-white max-w-[375px] min-h-screen w-full mx-auto'>
+    <div>
       <StepFormProvider>
         <ToggleProvider>{children}</ToggleProvider>
       </StepFormProvider>
