@@ -24,9 +24,7 @@ const VirtualListPage = () => {
           <img src={photo.thumbnailUrl} alt='컬러칩' />
         </div>
         <div className='w-full flex justify-between pr-4'>
-          <div className={`text-xl font-semibold`}>
-            {photo.thumbnailUrl.split('/')[4]}
-          </div>
+          <div className={`text-lg`}>{photo.thumbnailUrl.split('/')[4]}</div>
           <CopyTextButton text={photo.thumbnailUrl.split('/')[4]} />
         </div>
       </div>
@@ -35,7 +33,7 @@ const VirtualListPage = () => {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div className='h-[600px]'>
+      <div className='h-[600px] w-full'>
         <AutoSizer>
           {({ width, height }) => (
             <List
@@ -51,7 +49,9 @@ const VirtualListPage = () => {
       </div>
 
       <div>
-        당신에게 오늘 어울리는 색은:
+        <span className='block text-center py-4 font-semibod '>
+          당신에게 오늘 어울리는 색은:
+        </span>
         <div
           key={list && list[randomNum].id}
           className='flex gap-4 items-center'
