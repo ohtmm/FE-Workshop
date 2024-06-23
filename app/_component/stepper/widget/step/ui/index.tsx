@@ -59,4 +59,4 @@ const Step = ({
   );
 };
 
-export default StepType;
+export default Step;
