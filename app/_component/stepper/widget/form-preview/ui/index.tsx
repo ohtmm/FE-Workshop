@@ -1,5 +1,5 @@
 import { StepForm } from '@/app/_provider/stepper/step-form-provider';
-import ProgressBar from '../../step/ui/step-progress-bar';
+import ProgressBar from './step/ui/step-progress-bar';
 import INITIAL_STEPPER from '../../stepper/const/intial_stepper';
 import useStepForm from '../../stepper/lib/useStepForm';
 import Button from '../../../../shared/button';

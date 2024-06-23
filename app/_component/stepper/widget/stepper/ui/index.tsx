@@ -5,7 +5,7 @@ import useCurrentStep from '../lib/useCurrentStep';
 import useToggle from '../../../../shared/lib/useToggle';
 import NavigationButtons from './navigation-buttons';
 import isNextButtonDisabled from '../lib/isNextButtonDisabled';
-import Step from '../../step/ui';
+import Step from '../../form-preview/ui/step/ui';
 
 const Stepper = () => {
   const { fields } = useStepForm();

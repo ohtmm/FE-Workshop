@@ -2,8 +2,8 @@ import ProgressBar from './step-progress-bar';
 import Description from './step-description';
 import Field from './step-form-field';
 import { ChangeEvent } from 'react';
-import useStepForm from '../../stepper/lib/useStepForm';
-import { StepType } from '../../stepper/type';
+import useStepForm from '../../../../stepper/lib/useStepForm';
+import { StepType } from '../../../../stepper/type';
 
 interface Props {
   current: StepType;

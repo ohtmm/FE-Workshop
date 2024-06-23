@@ -1,7 +1,7 @@
 'use client';
 
 import { ChangeEvent, HTMLInputTypeAttribute, useState } from 'react';
-import { ClassNameProps } from '../../../../shared/type';
+import { ClassNameProps } from '../../../../../../shared/type';
 
 interface Props extends ClassNameProps {
   label: string;
