@@ -1,5 +1,5 @@
-import Bar from '../../../../shared/bar';
-import Title from '../../../../shared/title';
+import Bar from '../../../../../../shared/bar';
+import Title from '../../../../../../shared/title';
 
 interface Props {
   title: string;
