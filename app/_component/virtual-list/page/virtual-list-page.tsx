@@ -56,13 +56,20 @@ const VirtualListPage = () => {
       </div>
 
       <div>
-        Today's Color :
+        당신에게 오늘 어울리는 색은:
         <div
           key={list && list[randomNum].id}
           className='flex gap-4 items-center'
         >
           <div className='min-w-[150px] h-[150px]'>
-            <img src={list && list[randomNum].thumbnailUrl} alt='' />
+            {list && (
+              <Image
+                src={list[randomNum].thumbnailUrl}
+                alt='컬러칩'
+                width={150}
+                height={150}
+              />
+            )}
           </div>
           <div className='w-full flex justify-between pr-4'>
             <div className={`text-xl font-semibold`}>
