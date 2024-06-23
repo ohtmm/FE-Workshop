@@ -56,7 +56,7 @@ const VirtualListPage = () => {
       </div>
 
       <div>
-        Today's Color :{}
+        Today's Color :
         <div
           key={list && list[randomNum].id}
           className='flex gap-4 items-center'
