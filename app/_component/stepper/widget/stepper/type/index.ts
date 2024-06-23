@@ -1,7 +1,7 @@
 import { StepForm } from '@/app/_provider/stepper/step-form-provider';
 import { HTMLInputTypeAttribute } from 'react';
 
-export type Step = {
+export type StepType = {
   order: number;
   title: string;
   description: string;
