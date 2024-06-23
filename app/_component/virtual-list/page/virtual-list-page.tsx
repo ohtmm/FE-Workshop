@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import { ListRowRenderer, List, AutoSizer } from 'react-virtualized';
 import usePhotos from '../widget/photo-list/api/usePhotos';
 import CopyTextButton from '../../shared/copy-button';
+import Image from 'next/image';
 
 const rowHeight = 150;
 
@@ -20,7 +21,12 @@ const VirtualListPage = () => {
     return (
       <div key={photo.id} style={style} className='flex gap-4 items-center'>
         <div className='min-w-[150px] h-[150px]'>
-          <img src={photo.thumbnailUrl} alt='' />
+          <Image
+            src={photo.thumbnailUrl}
+            alt='컬러칩'
+            width={150}
+            height={150}
+          />
         </div>
         <div className='w-full flex justify-between pr-4'>
           <div className={`text-xl font-semibold`}>
@@ -50,7 +56,7 @@ const VirtualListPage = () => {
       </div>
 
       <div>
-        Today's Color :{}
+        Today's Color :
         <div
           key={list && list[randomNum].id}
           className='flex gap-4 items-center'
