@@ -1,9 +1,9 @@
 import validateEmpty from '../../../../shared/lib/validation-empty';
 import validateIdentificationNumber from '../../../../shared/lib/validation-identification-number';
 import validatePhoneNumber from '../../../../shared/lib/validation-phone-number';
-import { Step } from '../type';
+import { StepType } from '../type';
 
-const INITIAL_STEPPER: Step[] = [
+const INITIAL_STEPPER: StepType[] = [
   {
     order: 1,
     isActive: true,

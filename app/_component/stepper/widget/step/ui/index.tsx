@@ -3,10 +3,10 @@ import Description from './step-description';
 import Field from './step-form-field';
 import { ChangeEvent } from 'react';
 import useStepForm from '../../stepper/lib/useStepForm';
-import { Step } from '../../stepper/type';
+import { StepType } from '../../stepper/type';
 
 interface Props {
-  current: Step;
+  current: StepType;
   total: number;
 }
 
@@ -59,4 +59,4 @@ const Step = ({
   );
 };
 
-export default Step;
+export default StepType;
