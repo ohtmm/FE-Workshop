@@ -37,6 +37,17 @@ export default function Home() {
             {route.title}
           </Button>
         ))}
+        {Array.from({ length: 3 }).map((_, idx) => (
+          <Button
+            key={'disabled-' + idx}
+            fullWidth
+            variant='primary'
+            className='font-normal'
+            disabled
+          >
+            comming soon
+          </Button>
+        ))}
       </div>
       <footer className='text-xs font-normal text-grey700 mt-40 text-center'>
         Ⓒ Jiyoung Choi 2024. 05
