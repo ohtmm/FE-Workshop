@@ -21,7 +21,12 @@ const VirtualListPage = () => {
     return (
       <div key={photo.id} style={style} className='flex gap-4 items-center'>
         <div className='min-w-[150px] h-[150px]'>
-          <img src={photo.thumbnailUrl} alt='컬러칩' />
+          <Image
+            src={photo.thumbnailUrl}
+            alt='컬러칩'
+            width={150}
+            height={150}
+          />
         </div>
         <div className='w-full flex justify-between pr-4'>
           <div className={`text-lg`}>{photo.thumbnailUrl.split('/')[4]}</div>

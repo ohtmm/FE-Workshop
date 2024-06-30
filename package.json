@@ -15,7 +15,8 @@
     "react": "^18",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18",
-    "react-virtualized": "^9.22.5"
+    "react-virtualized": "^9.22.5",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@types/node": "^20",
