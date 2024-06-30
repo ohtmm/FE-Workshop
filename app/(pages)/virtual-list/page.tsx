@@ -1,7 +1,7 @@
-import VirtualListPage from '@/app/_component/virtual-list/page/virtual-list-page';
+import VirtualListOnboardingPage from '@/app/_component/virtual-list/page/ virtualList-onboarding-page';
 
 const Page = () => {
-  return <VirtualListPage />;
+  return <VirtualListOnboardingPage />;
 };
 
 export default Page;
